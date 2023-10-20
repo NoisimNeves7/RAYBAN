@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'gilroy';
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.back {
+  height: 100vh;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.top {
+  pointer-events: none;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+.workingArea {
+    position: relative;
+  height: 100vh;
+  width: 80%;
+  max-width: 1920px;
+  margin: 0 auto;
+  /* border: solid 1px red;x */
+}
+
+.nav{
+    width: 100%;
+    padding:  40px 0;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: all;
+}
+
+.nleft, .nright{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nleft img{
+    height: 60px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.hero{
+  margin-top: 1.2vw;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: red; */
+}
+
+.heroLeft{
+    min-width:50%;
+    /* height: 100%; */
+    /* background-color: yellow; */
+}
+
+.heroLeft .elem{
+  height: 9vw;
+  overflow: hidden;
+}
+
+.heroLeft .elem h1{
+  line-height: 0.9;
+  font-family: 'kajiro';
+  color:#fff ;
+  font-weight: 100;
+  font-size: 11vw;
+
+}
+
+.heroLeft button{
+  padding: .7vw 3vw;
+  margin-top: 2vw;
+  font-size: 2vw;
+  font-family: 'kajiro';
+  pointer-events: all;
+}
+
+
+.heroRight{
+    width:20%;
+    /* height: 100%; */
+    /* background-color: green; */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   
+}
+
+.heroRight p{
+text-align: right;
+font-size: 14px;
+font-weight: 300;
+
+}
+
+.heroRight .imageDiv{
+  width: 100%;
+  height: 170px;
+  background-image: url(https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmVycmllbiUyMGNvdW50eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  margin-top: 20px;
+  background-size: cover;
+  background-position:center ;
+  margin-bottom: 30px;
+} 
+
+.heroRight p:nth-child(3){
+  margin-bottom: 80px;
+}
+
+
